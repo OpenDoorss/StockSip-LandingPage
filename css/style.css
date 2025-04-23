@@ -50,7 +50,7 @@ body {
 .btn {
   display: inline-block;
   border-radius: 5rem;
-  background:var(--green);
+  background:#880E4F;
   color:#fff;
   padding:0.8rem 2.4rem;
   cursor: pointer;
@@ -60,14 +60,14 @@ body {
 }
 
 .btn:hover {
-  background: #585858;
+  background: var(--purple);
 }
 
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background-color: var(--green2);
   padding: 1rem 9%;
+  background-color: var(--light-background);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,7 +80,7 @@ header {
 }
 
 header .logo img{
-  width: 120px;
+  width: 90px;
   height: 60px;
 }
 
@@ -89,29 +89,33 @@ header .navbar.active {
 }
 
 header .navbar a {
-  font-family: "Fenix", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   padding: 2.5rem;
-  color:#878787;
+  color: var(--magenta);
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
 
 header .navbar a:hover {
-  color: var(--green);
+  color: var(--purple);
 }
 
 header .navbar button {
   font-size: 2rem;
-  font-family: "Fenix", sans-serif;
+  font-family: "Inter Semi Bold", sans-serif;
   font-weight: 400;
   color:#fff;
   justify-content: center;
-  padding: 1.5rem;
-  background-color: #222;
-  border-radius: 5px;
+  padding: 1.4rem;
+  background-color: var(--magenta);
+  border-radius: 5rem;
   border: none;
+}
+
+header .navbar button:hover {
+  background-color: var(--purple);
 }
 
 header #toggler {
@@ -133,7 +137,7 @@ header .fa-bars {
   font-size: 3rem;
   background: none;
   border: none;
-  color: #4caf50;
+  color: var(--magenta);
   cursor: pointer;
   position: absolute;
   top: 1rem;
@@ -149,3 +153,112 @@ header .fa-bars {
   padding-right: 10rem;
   flex-wrap: wrap;
 }
+
+.home .content {
+  flex: 1;
+  /* padding-right: 4rem; */
+  line-height: 1.6;
+  max-width: 57%;
+  justify-content: center;
+  color:#000
+}
+
+.home .content h3 {
+  font-size: 4.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.home .content p {
+  font-weight: 400;
+  font-size: 2.3rem;
+  font-family: "Inter", sans-serif;
+  color: var(--purple);
+  margin-bottom: 3rem;
+}
+
+.home img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  height: auto;
+  object-fit: cover;
+  margin-top: 8rem;
+}
+
+.cards {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  color: var(--light-background);
+  background-color: var(--blue);
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 1rem;
+  max-width: 300px;
+}
+
+.cards h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--light-background);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cards p, .cards ul {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.cards ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cards ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.contact-container {
+  background-color: var(--magenta);
+  color:var(--light-background);
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 6rem;
+}
+
+.contact-container a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.contact-container p {
+  font-weight: 400;
+}
+
+.social-media i {
+  color: var(--light-background);
+  margin-right: 4rem;
+  width: 80px;
+  font-size: 3rem;
+}
+
