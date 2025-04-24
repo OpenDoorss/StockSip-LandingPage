@@ -12,6 +12,7 @@
   --dark-background: #222;
   --light-text: #4E4E4E;
   --light-background: #F4EDE4;
+  --white: #fff;
 }
 
 * {
@@ -280,4 +281,131 @@ footer {
   font-size: 1.7rem;
   margin-top: 10px;
   background-color: var(--magenta);
+}
+
+.funciones {
+  text-align: center;
+  padding: 20px;
+}
+
+.funciones h2 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: var(--purple);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.funciones h3 {
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--blue);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.funciones p {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--purple);
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.funciones .card-contenedor { 
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.funciones .card {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 45px;
+  border: 10px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d; 
+  position: relative; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.funciones .card:hover {
+  transform: scale(1.05);
+}
+
+.funciones .card img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para la parte extendida de la tarjeta */
+.card-extendida {
+  background-color: var(--white);
+  color: var(--purple);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.funciones .card:hover .card-extendida {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilos para el contenido dentro de la parte extendida */
+.card-extendida h4 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-extendida ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.card-extendida li {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.card-extendida ol {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-extendida li { 
+  list-style-type: decimal;
 }
