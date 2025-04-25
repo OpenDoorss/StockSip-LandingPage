@@ -232,6 +232,22 @@ header .fa-bars {
   font-weight: 400;
 }
 
+.benefits {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.benefits__title {
+  font-weight: bold;
+  font-size: 64px;
+  color: #273238;
+  margin: 2.5rem;
+}
+
+.benefits__container {
+  display: flex;
+}
+
 footer {
   background-color: var(--magenta);
 }
