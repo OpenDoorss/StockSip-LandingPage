@@ -12,6 +12,7 @@
   --dark-background: #222;
   --light-text: #4E4E4E;
   --light-background: #F4EDE4;
+  --white: #fff;
 }
 
 * {
@@ -232,12 +233,236 @@ header .fa-bars {
   font-weight: 400;
 }
 
+.benefits {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.benefits__title {
+  font-weight: bold;
+  font-size: 64px;
+  color: var(--dark-background);
+  margin: 2.5rem;
+}
+
+.benefits__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.benefits__card {
+  border: 10px solid var(--dark-background);
+  border-radius: 5rem;
+  padding: 1.5rem;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.benefits__subtitle {
+  color: var(--dark-background);
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.benefits__list {
+  color: var(--purple);
+  text-align: left;
+  padding-left: 10rem;
+}
+
+.benefits__list__item {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  padding: 3rem;
+}
+
+footer {
+  background-color: var(--magenta);
+}
+.contact-container {
+  background-color: var(--magenta);
+  color:var(--light-background);
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 6rem;
+}
+
+.contact-container a {
+  color: #fff;
+  font-weight: 400;
+}
+
+.contact-container p {
+  font-weight: 400;
+}
+
+.social-media i {
+  color: var(--light-background);
+  margin-right: 4rem;
+  width: 80px;
+  font-size: 3rem;
+}
+
+.social-media i:hover {
+  color: var(--purple);
+}
+
+.footer-divider {
+  border: 1px solid #ccc;
+}
+
+.copyright-text {
+  text-align: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  background-color: var(--magenta);
+}
+
+.funciones {
+  text-align: center;
+  padding: 20px;
+}
+
+.funciones h2 {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: var(--purple);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.funciones h3 {
+  font-size: 2.3rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--blue);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+.funciones p {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--purple);
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.funciones .card-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.funciones .card {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 45px;
+  border: 10px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.funciones .card:hover {
+  transform: scale(1.05);
+}
+
+.funciones .card img {
+  max-width: 160px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos para la parte extendida de la tarjeta */
+.card-extendida {
+  background-color: var(--light-background);
+  color: var(--purple);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.funciones .card:hover .card-extendida {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilos para el contenido dentro de la parte extendida */
+.card-extendida h4 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-extendida ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.card-extendida li {
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.card-extendida ol {
+  padding-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-extendida li {
+  list-style-type: decimal;
+}
+
 .plans-title h1 {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 3.8rem;  
   font-family: "Roboto", sans-serif;
 }
+
 .plan-text p, .plan-text ul{
   font-size: 1.7rem;
   font-weight: 400;
@@ -372,54 +597,4 @@ header .fa-bars {
 
 #premium-button:hover {
   background-color: var(--purple);
-}
-
-footer {
-  background-color: var(--magenta);
-}
-.contact-container {
-  background-color: var(--magenta);
-  color:var(--light-background);
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  line-height: 6rem;
-}
-
-.contact-container a {
-  color: #fff;
-  font-weight: 400;
-}
-
-.contact-container p {
-  font-weight: 400;
-}
-
-.social-media i {
-  color: var(--light-background);
-  margin-right: 4rem;
-  width: 80px;
-  font-size: 3rem;
-}
-
-.social-media i:hover {
-  color: var(--purple);
-}
-
-.footer-divider {
-  border: 1px solid #ccc;
-}
-
-.copyright-text {
-  text-align: center;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 1.7rem;
-  margin-top: 10px;
-  background-color: var(--magenta);
 }
