@@ -363,7 +363,7 @@ footer {
   margin-bottom: 2rem;
 }
 
-.funciones .card-contenedor { 
+.funciones .card-contenedor {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -380,8 +380,8 @@ footer {
   border: 10px solid black;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  transform-style: preserve-3d; 
-  position: relative; 
+  transform-style: preserve-3d;
+  position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -403,7 +403,7 @@ footer {
 
 /* Estilos para la parte extendida de la tarjeta */
 .card-extendida {
-  background-color: var(--white);
+  background-color: var(--light-background);
   color: var(--purple);
   position: absolute;
   top: 0;
@@ -412,7 +412,7 @@ footer {
   height: 100%;
   padding: 20px;
   opacity: 0;
-  visibility: hidden; 
+  visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   border-radius: 45px;
   display: flex;
@@ -452,6 +452,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.card-extendida li { 
+.card-extendida li {
   list-style-type: decimal;
 }
+
