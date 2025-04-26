@@ -456,3 +456,145 @@ footer {
   list-style-type: decimal;
 }
 
+.plans-title h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3.8rem;  
+  font-family: "Roboto", sans-serif;
+}
+
+.plan-text p, .plan-text ul{
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-background);
+}
+
+.box-content{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box-free, .box-premium {
+  flex: 1;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.plan-free ul, .plan-premium ul {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.box-free {
+  background-color: #FFFFFF;
+  border: 3px solid #1F2D3D; 
+}
+
+.box-free h3 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  text-align: center;
+  color: var(--magenta); 
+  padding: 1rem 0;
+}
+
+.box-free .plan-free {
+  padding: 1rem;
+}
+
+.box-free .plan-free ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--magenta);
+}
+
+.box-free .plan-free .btn {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#free-button {
+  background-color: var(--magenta);
+  color: #fff;
+  display: inline-block;
+  border: none;
+  padding:0.8rem 2.4rem;
+  border-radius: 5rem;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#free-button:hover {
+  background-color: var(--purple);
+}
+
+.box-premium {
+  background-color: var(--blue);
+  color: var(--dark-text);
+}
+
+.box-premium h3 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.box-premium .plan-premium {
+  padding: 1rem;
+}
+
+.box-premium .plan-premium ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.box-premium .plan-premium ul li:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+  
+}
+
+.box-premium .plan-premium {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#premium-button {
+  background-color: var(--magenta);
+  color: var(--dark-text);
+  border: none;
+  display: inline-block;
+  padding:0.8rem 2.4rem;
+  border-radius: 5rem;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#premium-button:hover {
+  background-color: var(--purple);
+}
