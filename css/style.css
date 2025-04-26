@@ -232,6 +232,52 @@ header .fa-bars {
   font-weight: 400;
 }
 
+.benefits {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.benefits__title {
+  font-weight: bold;
+  font-size: 64px;
+  color: var(--dark-background);
+  margin: 2.5rem;
+}
+
+.benefits__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.benefits__card {
+  border: 10px solid var(--dark-background);
+  border-radius: 5rem;
+  padding: 1.5rem;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.benefits__subtitle {
+  color: var(--dark-background);
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.benefits__list {
+  color: var(--purple);
+  text-align: left;
+  padding-left: 10rem;
+}
+
+.benefits__list__item {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  padding: 3rem;
+}
+
 footer {
   background-color: var(--magenta);
 }
