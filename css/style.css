@@ -233,6 +233,101 @@ header .fa-bars {
   font-weight: 400;
 }
 
+
+#testimonios {
+   font-family: Arial, sans-serif;
+   margin: 20px;
+   justify-items: center;
+}
+
+#testimonios .content {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#testimonios .content h1 {
+    background: #8E24AA;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    width: 2000px;
+    align-content: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+#testimonios .content p {
+    margin-top: 25px;
+    font-size: 2.3rem;
+    font-family: "Inter", sans-serif;
+    color: var(--purple);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+#testimonios .card {
+    display: inline-block;
+    margin-top: 25px;
+    flex: 1;
+    margin: 10px 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 500px;
+    height: 300px;
+    justify-items: center;
+    background-color: #263238;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#testimonios .card-img {
+    width: 22%;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    margin: 10 10rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+#testimonios .card-content {
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    padding: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    flex-grow: 1;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 1.6rem;
+}
+
+#testimonios .card-footer {
+    text-align: center;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    border-radius: 50px;
+    background-color: #f0f8ff;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+#testimonios .card-footer .p {
+    font-family: "Inter", sans-serif;
+    color: #263238;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .benefits {
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -279,9 +374,11 @@ header .fa-bars {
   padding: 3rem;
 }
 
+
 footer {
   background-color: var(--magenta);
 }
+
 .contact-container {
   background-color: var(--magenta);
   color:var(--light-background);
