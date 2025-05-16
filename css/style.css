@@ -411,7 +411,7 @@ header .fa-bars {
 }
 
 .start-button:hover {
-  background-color: #45a049;
+  background-color: var(--purple);
 }
 
 /* Features Section */
@@ -996,6 +996,10 @@ footer {
     margin-top: 5rem;
   }
 
+  .section .image {
+    display: none;
+  }
+
   .cards {
     padding: 2rem 1rem;
   }
@@ -1183,6 +1187,11 @@ footer {
   header .fa-bars {
     display: block;
   }
+
+  .section .image {
+    display: none;
+  }
+
 
   header .navbar {
     position: fixed;
@@ -1378,6 +1387,10 @@ footer {
 
   html {
     font-size: 50%;
+  }
+
+  .image {
+    display: none;
   }
 
   .btn {
