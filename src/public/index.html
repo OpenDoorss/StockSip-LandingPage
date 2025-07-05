@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> StockSip </title>
+  <link rel="icon" href="assets/images/stocksip.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <a href="#" class="logo">
+    <img src="assets/images/logo-stocksip.png" alt="Stocksip Logo">
+  </a>
+
+  <!-- <button class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </button> -->
+
+  <button class="menu-toggle">☰</button>
+
+  <nav class="navbar">
+    <a href="#home" data-i18n="nav.home">Home</a>
+    <a href="#features" data-i18n="nav.features">How it works?</a>
+    <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <button id="toggle-start" data-i18n="nav.empezar" onclick="window.location.href='https://stocksip-od-app.web.app/'">
+      Get Started
+    </button>
+
+  </nav>
+
+  <div class="language-selector">
+    <button class="es" onclick="setLanguage('es')">ES</button>
+    <span class="separator">|</span>
+    <button class="en" onclick="setLanguage('en')">EN</button>
+  </div>
+</header>
+
+<section class="home" id="home">
+  <div class="content">
+    <h3 data-i18n="home.title">Optimize your inventory intelligently with StockSip!</h3>
+    <a href="#plans" class="btn" data-i18n="home.ver_planes">View plans</a>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="stats-container">
+    <h2 class="stats-title" data-i18n="stats_title">Results that speak for themselves!</h2>
+    <p class="stats-subtitle" data-i18n="stats_subtitle">
+      Our solution has transformed inventory management in liquor stores, optimizing processes and maximizing profits.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">+500</div>
+        <div class="stat-label" data-i18n="stats_1_label">Liquor stores managed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">99%</div>
+        <div class="stat-label" data-i18n="stats_2_label">Satisfied customers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">-35%</div>
+        <div class="stat-label" data-i18n="stats_3_label">Reduction in stockouts</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">+20%</div>
+        <div class="stat-label" data-i18n="stats_4_label">Increase in sales</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="text-content">
+    <h1 data-i18n="cta2.title">Professionalize inventory management in your liquor store</h1>
+    <p data-i18n="cta2.description">
+      Our application is designed to facilitate stock control, minimize losses, and maximize your sales. Keep real-time track of your products, receive automatic replenishment alerts, and maintain order in your warehouse simply and efficiently.
+    </p>
+    <a href="https://stocksip-od-app.web.app/" class="cta-button" data-i18n="cta2.button">Empezar</a>
+  </div>
+  <div class="image">
+    <img src="assets/images/icon-orders.png" class="landing-image" alt="Icon of orders">
+  </div>
+</section>
+
+<section class="features" id="features">
+  <h2 class="features_title" data-i18n="features.title">How does it work?</h2>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-main">
+        <img src="assets/images/icon-magnifying-glass.png" alt="Seguimiento de Stock">
+        <h3 data-i18n="features.card1.title">Stock Tracking</h3>
+        <p data-i18n="features.card1.description">Monitor your inventory in real time with us</p>
+      </div>
+      <div class="card-extended">
+        <h4 data-i18n="features.card1.subtitle">Más sobre Seguimiento</h4>
+        <p data-i18n="features.card1.details">Obtén visibilidad completa de tus niveles de inventario.</p>
+        <ul>
+          <li data-i18n="features.card1.list.0">Control en tiempo real</li>
+          <li data-i18n="features.card1.list.1">Alertas de bajo stock</li>
+          <li data-i18n="features.card1.list.2">Historial detallado</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-main">
+        <img src="assets/images/icon-bell.png" alt="Bell Icon">
+        <h3 data-i18n="features.card2.title">Receive Alerts</h3>
+        <p data-i18n="features.card2.description">Stay informed about stock and expiration dates</p>
+      </div>
+      <div class="card-extended">
+        <h4 data-i18n="features.card2.subtitle">Alert Details</h4>
+        <p data-i18n="features.card2.details">Don't miss anything important.</p>
+        <ul>
+          <li data-i18n="features.card2.list.0">Email notifications</li>
+          <li data-i18n="features.card2.list.1">Expiration alerts</li>
+          <li data-i18n="features.card2.list.2">Reorder reminders</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-main">
+        <img src="assets/images/icon-prices-up.png" alt="Optimization Icon">
+        <h3 data-i18n="features.card3.title">Optimize Your Purchases</h3>
+        <p data-i18n="features.card3.description">Make informed decisions before buying</p>
+      </div>
+      <div class="card-extended">
+        <h4 data-i18n="features.card3.subtitle">Optimization Tips</h4>
+        <p data-i18n="features.card3.details">Buy smarter and more efficiently.</p>
+        <ol>
+          <li data-i18n="features.card3.list.0">Analyze your sales</li>
+          <li data-i18n="features.card3.list.1">Forecast demand</li>
+          <li data-i18n="features.card3.list.2">Compare suppliers</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits" id="benefits">
+  <h2 class="benefits__title" data-i18n="benefits.title">Benefits</h2>
+  <div class="benefits__container">
+    <div class="benefits__card">
+      <h3 class="benefits__subtitle" data-i18n="benefits.card1.title">FOR LIQUOR STORE<br>OWNERS</h3>
+      <ul class="benefits__list">
+        <li class="benefits__list__item" data-i18n="benefits.card1.list.0">Loss reduction</li>
+        <li class="benefits__list__item" data-i18n="benefits.card1.list.1">Efficient stock management</li>
+        <li class="benefits__list__item" data-i18n="benefits.card1.list.2">Improve profits</li>
+      </ul>
+    </div>
+
+    <div class="benefits__card">
+      <h3 class="benefits__subtitle" data-i18n="benefits.card2.title">FOR <br>SUPPLIERS</h3>
+      <ul class="benefits__list">
+        <li class="benefits__list__item" data-i18n="benefits.card2.list.0">Demand prediction</li>
+        <li class="benefits__list__item" data-i18n="benefits.card2.list.1">Streamlined deliveries</li>
+        <li class="benefits__list__item" data-i18n="benefits.card2.list.2">Performance improvement</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="video-section">
+  <div class="video-container">
+    <h2 class="video-title" data-i18n="video_section_title">
+      Exploration of the application
+    </h2>
+
+    <div class="video-wrapper">
+      <iframe
+              width="560" height="315" src="https://www.youtube.com/embed/YEFc1JaNp9s" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="video-section">
+  <div class="video-container">
+    <h2 class="video-title" data-i18n="video_section_title2">
+      About the team
+    </h2>
+
+    <div class="video-wrapper">
+      <iframe
+              width="560" height="315" src="https://www.youtube.com/embed/Bg_38dIuhR4" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <h2 class="team-title" data-i18n="team.title">Team Members</h2>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="assets/images/member-martin.jpg" alt="Team Member Martin">
+        <h3>Martin Gonzales</h3>
+        <p>Team Leader</p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/member-farid.png" alt="Team Member Farid">
+        <h3>Farid Coronel</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/member-camila.png" alt="Team Member Camila">
+        <h3>Camila Huamani</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/member-nicolas.png" alt="Team Member Nicolas">
+        <h3>Nicolas Juarez</h3>
+        <p>Team Member</p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/member-matias.png" alt="Team Member Matias">
+        <h3>Matias Diaz</h3>
+        <p>Team Member</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2 class="faq-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question" data-i18n="faq_q1">
+        How does this app help me manage my liquor store?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer" data-i18n="faq_a1">
+        Our app allows you to keep real-time inventory control, record sales, low stock alerts, and optimize your orders to suppliers.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" data-i18n="faq_q2">
+        Can I receive notifications when a product runs out?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer" data-i18n="faq_a2">
+        Yes, you will receive automatic alerts when a product is about to run out, allowing you to make timely decisions and avoid stockouts.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" data-i18n="faq_q3">
+        Does the app allow generating sales and stock reports?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer" data-i18n="faq_a3">
+        Yes, you can generate detailed reports on sales, profit margins, best-selling products, and inventory turnover analysis.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question" data-i18n="faq_q4">
+        Is it difficult to set up the app for my business?
+        <span class="arrow">▼</span>
+      </div>
+      <div class="faq-answer" data-i18n="faq_a4">
+        No, the setup is straightforward and intuitive. Additionally, we offer support and tutorials so you can start using it without complications.
+      </div>
+    </div>
+  </div>
+
+  <a href="https://stocksip-od-app.web.app/" class="start-button" data-i18n="start_now_button">Get Started</a>
+</section>
+
+<section class="plans-title" id="plans">
+  <h1 data-i18n="plans.title">Plans</h1>
+  <div class="box-content">
+    <div class="plan-text">
+      <p data-i18n="plans.description">Premium Plan Conditions</p>
+      <ul>
+        <li data-i18n="plans.list.0">No contracts: cancel anytime.</li>
+        <li data-i18n="plans.list.1">Free trial for 14 days.</li>
+        <li data-i18n="plans.list.2">Available for both liquor stores and distributors.</li>
+      </ul>
+      <img src="assets/images/icon-plans.png" alt="Plan Icon">
+    </div>
+    <div class="box-free">
+      <h3 data-i18n="plans.free.title">Free</h3>
+      <div class="plan-free">
+        <ul>
+          <li data-i18n="plans.free.list.0">Manage up to 50 products</li>
+          <li data-i18n="plans.free.list.1">Storage guides</li>
+          <li data-i18n="plans.free.list.2">Basic alerts</li>
+        </ul>
+        <div class="btn-free">
+          <button id="free-button" data-i18n="plans.free.button">Choose</button>
+        </div>
+      </div>
+    </div>
+    <div class="box-premium">
+      <h3 data-i18n="plans.premium.title">Premium</h3>
+      <div class="plan-premium">
+        <ul>
+          <li data-i18n="plans.premium.list.0">S/. 19.90</li>
+          <li data-i18n="plans.premium.list.1">Priority support</li>
+          <li data-i18n="plans.premium.list.2">Custom alerts</li>
+        </ul>
+        <div class="btn-premium">
+          <button id="premium-button" data-i18n="plans.premium.button">Choose</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="testimonials__header">
+    <h1 data-i18n="testimonials.title">Testimonials</h1>
+    <p data-i18n="testimonials.description">
+      This is what our users say about our solution when using it in their business!
+    </p>
+  </div>
+
+  <div class="testimonial-card">
+    <img src="assets/images/woman-testimonial.png" alt="Image of a Female Testimonial" class="testimonial-card__img">
+    <div class="testimonial-card__content">
+      <p data-i18n="testimonials.card1.text">
+        'Thanks to StockSip, I can now manage my liquor store inventory without worrying about stockouts or expired products. Now there are less devolutions!'
+      </p>
+    </div>
+    <div class="testimonial-card__footer">
+      <p>Sandra Mendoza</p>
+      <p>Distribuidora Andina – Arequipa, Perú</p>
+    </div>
+  </div>
+
+  <div class="testimonial-card">
+    <img src="assets/images/man-testimonial.png" alt="Image of a Male Testimonial" class="testimonial-card__img">
+    <div class="testimonial-card__content">
+      <p data-i18n="testimonials.card2.text">
+        'Before using StockSip, I lost a lot of money due to expired products. Now I can keep track of everything and make better decisions.'
+      </p>
+    </div>
+    <div class="testimonial-card__footer">
+      <p>Martín Ríos</p>
+      <p>Licorería Don Pepe – Lima, Perú</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="contact-container" id="contact">
+    <div class="stocksip">
+      <div class="social-media">
+        <i href="#" class="fab fa-facebook-f" id="facebook"></i>
+        <i href="#" class="fab fa-twitter" id="twitter"></i>
+        <i href="#" class="fab fa-linkedin-in" id="linkedin"></i>
+      </div>
+      <h3 data-i18n="footer.slogan">Quality and efficiency are guaranteed in every bottle</h3>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#benefits" data-i18n="nav.benefits">Benefits</a></li>
+        <li><a href="#features" data-i18n="nav.features">How does it work?</a></li>
+      </ul>
+    </nav>
+  </div>
+  <hr class="footer-divider">
+  <p class="copyright-text">
+    <i class="copyright-message"></i>
+    <span data-i18n="footer.rights">@Copyright, OpenDoors 2025. All rights reserved</span>
+  </p>
+</footer>
+<script src="assets/scripts/i18n.js"></script>
+</body>
+</html>
